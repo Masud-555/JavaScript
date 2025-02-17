@@ -13,16 +13,20 @@
 
         let x = 20;
         let y = 30;
-        let z = 40
+        let z = 40;
         document.write(x + ' ');
-        document.write(y + '<br>');
+        document.write(y + ' ');
         document.write(z + '<br>');
 
         let temp = x;
         let temp1 = y;
-       
+        x = z;
+        y = temp1;
+        z = temp;
         document.write(x + ' ');
-        document.write(y);
+        document.write(y + ' ');
+        document.write(z + ' ');
+
 
 
 
