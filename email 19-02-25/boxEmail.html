@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="">Email</label><br>
+    <input type="text" id="email"><br>
+    <input type="submit" value="Check" onclick="check()">
+    <script>
+        function check() {
+            let email = document.getElementById("email").value;
+            let word = /^\S+@\S+\.\S+$/;
+
+
+            if (word.test(email)) {
+                document.write('Email Address is Correct')
+            }
+            else {
+                document.write('Email Address is Wrong')
+            }
+        }
+    </script>
+</body>
+
+</html>
