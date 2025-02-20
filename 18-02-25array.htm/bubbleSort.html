@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let number = [60, 50, 70, 20, 10, 40, 30]
+
+        for (let i = 0; i < number.length - 1; i++) {
+
+            for (let m = 0; m < number.length - 1 - i; m++) {
+
+                if (number[m] > number[m + 1]) {
+                    let temp = number[m];
+                    number[m] = number[m + 1];
+                    number[m + 1] = temp;
+                }
+            }
+
+        }
+
+        document.write(number);
+    </script>
+</body>
+
+</html>
