@@ -1,4 +1,4 @@
-function dataSend() {
+function dataSend() {    
 
     let uName = document.getElementById('name').value;
     let contact = document.getElementById('contact').value;
@@ -15,11 +15,11 @@ function dataSend() {
     }
 
     let output = "Name: " + uName + "\n" +
-        "Contact: " + contact + "\n" +
-        "Remarks: " + remarks + "\n" +
-        "Gender: " + gender.value + "\n" +
-        "Courses: " + courseValue + "\n" +
-        "Location: " + location + "\n";
+             "Contact: " + contact + "\n" +
+             "Remarks: " + remarks + "\n" +
+             "Gender: " +  gender.value  + "\n" +
+             "Courses: " + courseValue + "\n" +
+             "Location: " + location + "\n";
 
 
     let newWindow = window.open('', '_blank');
